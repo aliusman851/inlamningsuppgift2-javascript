@@ -1,0 +1,37 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+.header {
+     height: 15%;
+     width: 100%;
+     background-color:burlywood;
+      
+    }
+    .image{
+     height: 20%;
+     max-width: 20%;
+     border: solid;
+     border-color: cadetblue;
+     
+     
+    }
+
+.setheader h2 {
+    color: blue;
+    display: inline;
+}
+.container{
+background-color: cornflowerblue;
+height: 200px;
+max-width: 100%;
+}
+.searchcity {
+float:right;
+margin-right: 40%;    
+margin-top: 5%;
+}
+.searchcity input{
+    height: 35.5px;
+}
