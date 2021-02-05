@@ -4,13 +4,13 @@
     font-family: sans-serif;
 }
 .header {
-     height: 15%;
+     
      width: 100%;
      background-color:burlywood;
       
     }
     .image{
-     height: 20%;
+     height: 8rem;
      max-width: 20%;
      border: solid;
      border-color: cadetblue;
@@ -34,4 +34,14 @@ margin-top: 5%;
 }
 .searchcity input{
     height: 35.5px;
+}
+.weather{
+    border: solid;
+    margin-top: 10rem;
+    margin-right: 30rem;
+    float:right;
+    color: crimson;
+}
+.weather h5 {
+    margin-top: -2rem;
 }

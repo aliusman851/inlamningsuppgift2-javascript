@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Citytravel</title>
 </head>
+
 <body>
-    <header class = "header">
+    <header class="header">
         <div class="setheader ">
-        <img class ="image" src ="/images/citytravel.jpg", alt="travel">
-        
-       <h2> city travel</h2>
-       </div>
+            <img class="image" src="/images/citytravel.jpg" , alt="travel">
+
+            <h2> city travel</h2>
+        </div>
 
     </header>
-    <section class ="container">
+    <section class="container">
         <div class="searchcity">
             <input type="text" id="nameofcity" placeholder="type city name">
             <button type="button" class="btn btn-secondary">Enter</button>
         </div>
+
         <div>
-            <input type="checkbox" id="scales" name="scales">
-            <label for="scales">Only Weather</label>
-
-
-
-  <input type="checkbox" id="horns" name="horns">
-  <label for="horns">Only Attraction</label>
-  <input type="checkbox" id="horns" name="horns">
-  <label for="horns">Filter Alphabatically</label>
-
-             
+            <input type="checkbox" id="weather" name="weather">
+            <label for="weather">Only Weather</label>
+            <input type="checkbox" id="attraction" name="attraction">
+            <label for="attraction">Only Attraction</label>
+            <input type="checkbox" id="alphabats" name="alphabats">
+            <label for="alphabats">Filter Alphabatically</label>
         </div>
 
-    </section>
-    
+        <section>
+            <div class="weather" style="width: 18rem; height: 10rem;">
+                <h5 class="title">Current Weather</h5>
+                <h6 class="day"></h6>
+                <p class="temperture"></p>
+                <p class="condition"></p>
+            </div>
+        </section>
 
-    
+
 </body>
+
 </html>
