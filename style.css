@@ -50,13 +50,13 @@ margin-top: 5%;
 }
 .navbar{
     border: solid;
-   margin-top: 60rem;
+   margin-top:5rem;
     height: 5rem;
     background-color: darkgreen;
  }
  .attraction{
     
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-right: 30rem;
     float:right;
     color: crimson;
@@ -69,6 +69,8 @@ margin-top: 5%;
     margin-top: -2rem;
 }
  .cards{
-     display: inline-flex;
-     margin:1rem;
+    margin-top: 30rem;
+    height: 15rem;
+    width: 15rem;
+     
  }
