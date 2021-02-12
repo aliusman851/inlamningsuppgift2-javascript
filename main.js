@@ -44,15 +44,10 @@ button.addEventListener('click', async () => {
     }
 });
 
-const CLIENT_ID = "H3TXBYEDVD2ETUGDV2E0HY5GFOXMO1JXY13CX51TP12B2ZA2";
-const CLIENT_SECRET = "WFI5YNVOYWXAISJUWLD40O1VOZJZNVHLS5IYIPTK4VUPSQOK";
-
-
-
 button.addEventListener('click', () => {
     
     const CLIENT_ID = "H3TXBYEDVD2ETUGDV2E0HY5GFOXMO1JXY13CX51TP12B2ZA2";
-const CLIENT_SECRET = "WFI5YNVOYWXAISJUWLD40O1VOZJZNVHLS5IYIPTK4VUPSQOK";
+    const CLIENT_SECRET = "WFI5YNVOYWXAISJUWLD40O1VOZJZNVHLS5IYIPTK4VUPSQOK";
     fetch('https://api.foursquare.com/v2/venues/explore?cat=food&near='+inputvalue.value+'&client_id='+CLIENT_ID+'&client_secret='+CLIENT_SECRET+'&v=20210212&limit=10')
    
     .then(response => response.json())
