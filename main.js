@@ -77,6 +77,8 @@ function checkbox(){
     
 
 button.addEventListener('click', async() => {
+    let attractioncheckbox = document.getElementById("attraction")
+    if(attractioncheckbox.checked){
     
      let today = new Date();
      let date = today.getFullYear()+'0'+(today.getMonth()+1)+''+today.getDate();
@@ -130,6 +132,9 @@ adressheading3.innerHTML = 'Address:'
 attractionadress3.innerHTML = adress3;
 let attractionimage3 = document.querySelector(".attraction-image3");
 attractionimage3.src = photos3;
+    }else{
+        style.display = "none";
+    }
     });
     
     /*
