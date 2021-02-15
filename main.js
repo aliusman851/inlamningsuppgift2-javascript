@@ -14,18 +14,32 @@ let temperture = document.querySelector(".temperture");
 let condition = document.querySelector(".condition");
 
 
-button.addEventListener('click', checkboxsearch);
 
+/*
+function checkbox(){
+    let checkBox = document.getElementById("weather");
+    const text = serverresponse,
+  if (checkBox.checked != true){
+    text.style.display = async();
+  } else {
+     text.style.display = "none";
+  }
+}
 
-
-button.addEventListener('click', async () => {
-    try {
+*/
+ button.addEventListener('click', async () => {
+    let weathercheckbox = document.getElementById('weather');
+    if(weathercheckbox.checked){
+        
+    try{
+    
 
         const serverresponse = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputvalue.value +
         '&appid=a89ac303d22fef22631095641fa4dcf1');
         if (serverresponse.ok) {
             const information = await serverresponse.json();
-            
+           
+               
             /* 
              .then(Response => Response.json())
              .then(data => {
@@ -42,13 +56,25 @@ button.addEventListener('click', async () => {
             temperture.innerHTML = keltocel;
             writecondition.innerHTML = 'Condition';
             condition.innerHTML = currentcond;
-        } else {
-            alert("wrong city name ")
+          
+            
+            } else{
+                alert("city name is not valid");
+            }
+        }catch{
+            alert("server error")
         }
-    } catch (error) {
-        alert("given city name is incorrect")
     }
-});
+            else {
+              style.display = "none";
+            }
+        } );
+           
+        
+    
+    
+    
+    
 
 button.addEventListener('click', async() => {
     
